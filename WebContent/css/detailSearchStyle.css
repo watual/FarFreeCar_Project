@@ -1,0 +1,393 @@
+
+
+	/* -----------------------페이지 루트--------------------------------*/
+	
+	.detailSearch_pageLine .mypageLine{
+		width:100%; 
+		border-bottom:1px solid #c8c8c8;
+		margin-top:24px;
+		padding-left:10%;
+	}
+	
+	.detailSearch_pageLine .mypageLine .route{
+		line-height:center;
+		height: 33px;
+	}
+
+	.detailSearch_pageLine .mypageLine .route > a{
+		color:  #8e8d8d;
+		font-size:13px;
+		font-weight:lighter;
+	}
+	
+	
+	
+	/* ---------------------- 루트 리스트 --------------------------------*/
+	.detailSearch_pageLine .route a {
+	    text-decoration: none;
+	    color: #000;
+	}
+	
+	.detailSearch_pageLine .route li {
+	    padding: 0px;
+	    list-style-type: none;
+	    margin-top:1px;
+	    color:  #8e8d8d;
+		font-size:13px;
+		font-weight:lighter;
+	
+	}
+	
+	.detailSearch_pageLine .route .submenu2 li {
+		padding:5px;
+	}
+	
+	
+	.detailSearch_pageLine .route input {
+	    position: fixed;
+	    left: -9999px;		
+	  
+	}
+	
+	.detailSearch_pageLine .route label {
+	    cursor: pointer;
+	    color:  #8e8d8d;
+		font-size:13px;
+		font-weight:lighter;
+		float:right;
+		
+		
+	}
+	
+	.detailSearch_pageLine .menu2 > li {
+	    list-style-type: none;
+	    float: left;
+	    position: relative;  
+	    width: 100px;
+	}
+	
+	.detailSearch_pageLine .menu2 .submenu2 {
+	    position: absolute;
+	    width: 120px;
+	
+	    transform: scaleY(0);
+	    transform-origin: top;
+	    transition: all 0.3s;
+	    background: white;
+	    padding:0;
+	    border: 1px solid #c8c8c8;
+	    border: 1px solid #c8c8c8;
+	    margin-top:32px;
+	    margin-left:-10px;
+	}
+	
+	
+	.detailSearch_pageLine .menu2 #menuBtn2:checked ~ .submenu2 {
+	    transform: scaleY(1);
+	}
+	
+	
+	
+	.detailSearch_pageLine .menu2 .submenu2 li:hover {
+		background:#ff6767;
+	}
+	
+	.detailSearch_pageLine .menu2 .submenu2 li:hover a {
+		color:white;
+	}
+
+
+	
+	
+	/* ----------------------- detailRent --------------------------------*/
+	.detailRent{
+		background:white;
+		height: 600px;
+		color:black;
+		margin-top: 50px;
+		font-family: 'NanumBarunGothic','맑은 고딕','돋음', dotum, sans-serif;
+		
+	}
+	
+	.detailRent h2{
+		font-size:24px;
+		color:#161616;
+	}
+	
+	
+	
+	
+	
+	.detailRent .detail_top{
+		position:relative;
+		width:100%;
+		height:65px;
+		
+	}
+	
+	.detailRent .box{
+		width:300px;
+		height:100px;
+		float:left;
+		position:absolute;
+		
+		
+	}
+	
+	.detailRent .f_top{
+		background:#f04040;
+		width:260px;
+		height:50px;
+		border:none;
+		border-radius: 0 15px 0px 0;
+		
+		position:absolute;
+		
+		color:white;
+		text-align:center;
+		line-height:50px;
+		font-weight:bold;
+		font-size:15pt;
+	
+	}
+	
+	.detailRent .f_cont-box{
+		width:0px;height:0px;
+		border-right:50px solid transparent; /*border의 성질을 이용해 오른쪽테두리만 투명으로 만든다. */
+		border-bottom:47px solid #f04040; /*border를 사용해 두께를 만든다.*/
+		
+		position:absolute;
+		float:left;
+		left:255px;
+		top:3.5px;
+	}
+	
+	
+	
+	.detailRent .left{
+		width:0px;height:0px;
+		border-right:50px solid transparent; /*border의 성질을 이용해 오른쪽테두리만 투명으로 만든다. */
+		border-bottom:47px solid #bcbdc0; /*border를 사용해 두께를 만든다.*/
+		
+		position:absolute;
+		float:left;
+		left:4.5px;
+	
+		transform:rotate(180deg);
+	}
+	
+	.detailRent .middle{
+		background:#bcbdc0;
+		width:260px;
+		height:50px;
+		border:none;
+		border-radius: 0 15px 0px 15px;
+		left:50px;
+		position:absolute;
+		
+		color:white;
+		text-align:center;
+		line-height:50px;
+		font-weight:bold;
+		font-size:15pt;
+	
+	}
+	
+	.detailRent .right{
+		width:0px;height:0px;
+		border-right:50px solid transparent; /*border의 성질을 이용해 오른쪽테두리만 투명으로 만든다. */
+		border-bottom:47px solid #bcbdc0; /*border를 사용해 두께를 만든다.*/
+		
+		position:absolute;
+		float:left;
+		left:305px;
+		top:3.5px;
+		
+	}
+	
+	
+	
+	/*-------------------detailRent_left-------------------------------------*/
+	
+	.detailRent_left{
+		width:420px;
+		height:700px;
+		float:left;
+	}
+	
+	  .detailRent_left .subtitle_box{
+      		margin-top:10px;
+      		margin-bottom:50px;
+      }
+      
+       .detailRent .subtitle{
+      	font-size:14pt;
+      	font-weight:bold;
+      	margin-bottom:20px;
+      	border-bottom:1px solid black;
+      	padding-bottom:5px;
+
+      }
+      
+       .detailRent_left .box{
+      	width:196px;
+	    height: 53px;
+	    border: 2px solid red;
+	    box-sizing: border-box;
+	    text-align: center;
+	    line-height:50px;
+	    font-weight:bold;
+	   
+	    float:left;
+	
+      }
+      
+       .detailRent_left a{
+      	font-size:12pt;
+      	color:black;
+      }
+      
+       .detailRent_left td a{
+      	color:#313131;
+      	/*padding:15px 40px;*/
+      	display:inline-block;
+      	width:130.4px;
+      	padding-top:15px;
+      	height:30.8px; /* 134.4 52.8 -> 4커짐 */
+      }
+      
+       .detailRent .a0{
+      	width: 404px;
+      }
+      
+      .detailRent_left  h7{
+      	 font-size:9pt; 
+      	 color:red;
+      	 /*visibility:hidden;*/
+      	 display:none;
+      }
+      
+       .detailRent_left table{
+      	border-collapse:collapse;
+      	width:411.2px;
+      	
+      }
+      
+       .detailRent_left td{
+            	
+      	padding:0;
+      	border: 1px solid #c2c2c2;
+      	font-size:12pt;
+      	text-align:center;
+      	color:#313131;
+      	width:130.4px;
+      	height:49.8px;
+      	
+      	
+      }
+      
+     
+      .detailRent_left #detailRentBtn{
+      	border:none;
+		float:left;
+		background:#ff6767;
+		width:410px;
+		height:48px;
+		color:white;
+		font-weight:bold;	
+      }
+      
+      /*--------------------------- detailRent_right -------------------*/
+      .detailRent_right{
+      	float:left;
+      	margin-left:50px;
+      	width:720px;
+		height:700px;
+      }
+      
+      .detailRent_right .box_scroll{
+		overflow: scroll;
+	    overflow-x: hidden;
+	    
+	    width:720px;
+	    height:625px;
+	   
+	    border-top: 1px solid #000000;
+	    border-bottom: 1px solid #000000;
+	    
+	    color:#646464;
+      }
+      
+      .detailRent_right .result{
+      	font-size:14pt;
+      	font-weight:bold;
+      	margin-top:10px;
+      	padding-bottom:5px;
+      }
+      
+   
+      
+      .detailRent_right .car_list{
+      	width:720px;
+      	height:148px;
+      	background:#f2f2f2;
+      	border-bottom:1px solid #cccccc;
+      	padding:20px 15px;
+      }
+      
+        .detailRent_right .car_img{
+      	width:200px;
+      	height:148px;
+      	background:white;
+      	float:left;
+      }
+      
+      .detailRent_right .car_list_right1{
+      	margin-left:20px;
+
+      	width:470px;
+      	height:38px;
+      	float:left;
+      }
+      
+      .detailRent_right .carname{
+      	color:black;
+      	font-size: 18pt;
+      	margin-top:5px;
+      	font-weight:bold;
+      	float:left;
+      }
+      
+      .detailRent_right .price{
+      	color:red;
+      	font-size: 22pt;
+      	margin-top:5px;
+      	margin-right:10px;
+      	font-weight:bold;
+      	float:right;
+      }
+      
+      .detailRent_right .car_list button{
+      	width:120px;
+      	height:30px;
+      	background:#f04040;
+      	border:none;
+      	color:white;
+      	font-weight:bold;
+      	margin-left:360px;
+      	
+      }
+      .detailRent_right .fuel_img{
+      	width:45px;
+      	height:60px;
+      	margin-left:25px;
+      }
+      
+      
+      .detailRent_right .inner_div{
+      	width:600px;
+      	height:60px;
+      }
+      
+	
+

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*----------------------------- 기본설정 -------------------------------------*/
+html{
+	overflow-x:hidden;
+	overflow-y:auto;	
+}
+
+body{
+	margin:0;
+}
+.back{
+	color: black;
+	background: white;
+	margin:0;
+	width: auto;
+	height: auto;	
+}
+
+ a{
+	text-decoration:none;
+ }
+
+
+/*----------------------------- header 컨테이너 -------------------------------------*/
+.header_container{
+		margin:15px 0 20px 150px;
+		height: 110px;
+		background: white;
+}
+
+/*----------------------------- section 컨테이너 -------------------------------------*/
+.section_container{
+	margin: 0 150px 0 150px;	
+}
+
+/*----------------------------- aside 컨테이너 -------------------------------------*/
+.aside_container{
+	margin: 0 0 0 150px;
+}
+
+/*----------------------------- footer 컨테이너 -------------------------------------*/
+.footer_container{
+	margin: 0 0 0 0px;
+}
+
+/*--------- ffc img -------------*/
+
+img{
+	width:215px;
+	height:100px;
+	float: left;
+}
+
+/*-------- (로그인 | 회원가입) -------*/
+
+.header_logReg{
+	font-weight:lighter;
+	font-family:"맑은 고딕";
+	/*font-family:"돋움";	*/
+	font-size:15px;
+	color: #979797;
+	position:absolute;
+	top:3.5%;
+	left:86%;
+}
+
+.header_logReg a {
+	color: #979797;
+}
+
+
+
+ #nav{     /*전제 메뉴 스타일*/
+	position:absolute;
+	left:460px;
+	top: 55px;
+	
+	list-style:none; /* 점없앰 */
+	height: 55px; /*메뉴 바 길이*/
+	padding :0; /* 내용물 패딩 */
+	margin:0;
+	background: radial-gradient(#f04040,#ed1b1b) fixed;
+	background: #f04040;
+	border-radius: 0 0 0 100px;
+	width:100%;
+
+ }
+ 
+ #nav li{                                 /*전체 li 스타일*/
+	float:left; /*왼쪽부터 차례대로 표시*/
+	position: relative; /*??*/
+	margin: 0;/*상, 왼*/
+	padding: 0; /*리스트끼리 패딩*/
+	list-style:none;
+	width:250px;
+ }
+
+ #nav li a{                              /*전체 a 스타일*/
+	display:block;
+	font-size: 18px;
+	font-weight: bold;
+	color : white;
+	text-decoration: none;
+	/*그림자*/
+	/*rgba: red green bule alpha(0:완전투명, 1:불투명)*/
+	/*text-shadow: 0 1px 1px rgba(0,0,0,0.3);  */
+
+	padding: 0;
+	margin:0;
+	
+ }
+
+ #nav ul a{                            /* 서브메뉴 a의 스타일 */
+	font-weight:normal;
+	color:black;
+	padding: 12px;
+	font-size:14px;
+ }
+
+ #nav li:hover > a{                        /*메인메뉴링크에 hover했을때 메인메뉴 a 스타일*/
+	color: #f04040; /*글자색 변함*/
+	margin:0;
+	padding:15px;/*7 -> 5 로 줄어들어 패딩 상하좌우가 올라간 느낌 */
+	background: white; /*배역색 지정*/
+ }
+
+
+#nav > li > a{                             /* 메인메뉴의 a */
+	border-radius: 0 0 0 100px;
+	text-align:center; 
+	margin-top:15px;
+	height:30px;
+}
+
+ #nav ul li:hover a{
+	/*background: #cc9882;*/
+	font-weight:bold;
+ }
+
+
+ #nav ul{                               /*서브메뉴 스타일*/
+	list-style:none;
+	margin: 0;
+	padding:0;
+	
+	position: absolute; /*고정위치에 표시*/
+	left: 0; /*부모요소와 왼쪽 좌표값을 같게한다.??*/
+	top: 55px; /*부모요소로 부터 40px아래에 표시*/
+	
+	width: 250px; /*서브메뉴의 너비*/
+	/*background: #ffcab2; /*서브메뉴 배경색 */
+	background:white;
+	border-bottom: 2px solid #f04040;
+	text-align: center;
+
+	/*opacity:0; /*투명하게 해서 안보이도록 설정*/
+	display:none;
+ }
+
+ #nav li:hover ul{
+	/*opacity:1;*/
+	display:block;
+	
+ }
+
+ #nav li :hover > ul li{
+	height: 40px;
+	overflow:visible;
+	padding:0;
+ }
+
+ #nav ul li {
+	float:none; /*부모요소의 떠있는 속성 해제 세로로 표시*/
+	margin: 0; 
+	padding: 0;
+	font-size: 10px;
+}	
+
+/* 메뉴 굴곡 부분 */
+ .circle{
+	width:55px;
+	height:55px;
+	background:#f04040;
+	border-radius:0 0 0 100%;
+	position: absolute;
+	left: 205px;
+	top: 0px;
+	display:none;
+ }
+
+#nav li:hover .circle{
+	/*opacity:1;*/
+	display:block;
+	
+ }

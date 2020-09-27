@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+div {
+	/* border:1px dotted red; */
+}
+body, ul, li {
+	list-style:none;
+	font-family: 'Single Day', cursive;
+}
+.container {
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	display: flex;
+}
+.header_top > .container {
+	display: flex;
+	justify-content: space-between;
+}
+.header_menu {
+	width:100%;
+	height:80px;
+	background: black;
+	display: flex;
+}
+@media only screen and (max-width:760px) {
+	.gnb > .header_menu {
+		width: 760px;
+	}
+	section {
+		width: 760px;
+	}
+}
+.gnb > .header_menu > .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_menu_list {
+	width: 100%;
+	height: 100%;
+}
+.header_menu_list > ul {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.header_menu_list > ul > li {
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+}
+.header_menu_list li > a {	/* gnb 1차 item 요소 */
+	display: block;
+	padding: 20px;
+	width: 100px;
+	text-align: center;
+	background: black;
+	color: white;
+	transition:width 1s, height 1s, background-color 1s, color 1s, transform 1s;
+}
+.header_menu_list li:hover > a {
+	display: block;
+	background: black;
+	color: yellow;
+	/*transform: skewx(10deg);*/
+}
+.header_menu_list li {
+	position: relative;
+	color: white;
+}
+.header_menu_list li > .dropdown {
+	/* display: none; */
+	position: absolute;
+	height: 100%;
+	top:100%;
+	opacity: 0;
+	z-index: 9;
+	font-size: 15px;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-delay: 0;
+	transition-timing-function: linear;
+}
+.header_menu_list li:hover > .dropdown {	/* 각 li요소가 hover하면 표시 */
+	/* display: block; */
+	opacity: 1;
+	z-index:12;
+	transition: opacity 1s linear;
+}
+section {
+	position: relative;
+	z-index:10;
+	background: black;
+	color: white;
+}
+section > img {
+	opacity: 0.7;
+}
+section > .reserve_simple {
+	width: 500px;
+	height: 100px;
+	background: white;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform:translateX(-50%);
+	color: black;
+}
+.simple_table tr > td > * {
+	height: 30px;
+	text-align: center;
+	margin : 3px;
+}
+
+.font1{
+	color:red;
+}
